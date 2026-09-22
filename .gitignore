@@ -22,7 +22,12 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+*.key
+*.p12
+*.pfx
+*.log
 
 # debug
 npm-debug.log*
@@ -35,7 +40,17 @@ yarn-error.log*
 
 # vercel
 .vercel
+.vercelignore.bak
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*
+.aider*
+
+.forge-permissions.json
+
+# nested standalone repo (has its own .git history - back it up separately)
+deepseek-browser-agent/
